@@ -4,7 +4,8 @@ The organization website, hosted on GitHub Pages. The custom-domain setup
 for <https://openbohemians.org/> is documented in [DNS-SETUP.md](DNS-SETUP.md).
 The original Pages address is <https://openbohemians.github.io/>.
 
-This is a static site: `index.html`, `style.css`, and `favicon.svg`. GitHub
+This is a static site: `index.html`, `support/index.html`, `style.css`, and `favicon.svg`.
+The founder’s support letter is published at `/support/` and linked from the homepage. GitHub
 Pages publishes the root of `main`. `.nojekyll` serves these files directly.
 `CNAME` sets the custom domain when it is published on `main`.
 

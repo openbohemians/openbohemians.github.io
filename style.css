@@ -124,3 +124,19 @@ h2 { font: 400 43px/1.15 var(--serif); letter-spacing: -.035em; margin-top: 12px
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* The founder’s support letter shares the main site’s typography and colors. */
+.support-letter { max-width: 760px; margin: 0 auto; padding: 65px 0 80px; }
+.support-letter h1 { font-size: clamp(40px, 5.5vw, 64px); }
+.support-letter p:not(.eyebrow) { margin-top: 24px; color: var(--muted); }
+.support-letter .letter-intro { font-size: 19px; }
+.support-letter h2 { font-size: 30px; margin-top: 38px; }
+.support-letter .letter-action { margin: 30px 0; }
+.support-letter .letter-signature { color: var(--ink); font: italic 25px/1.5 var(--serif); }
+.support-letter .letter-signature span { color: var(--muted); font: 13px/1.5 var(--sans); }
+nav { flex-wrap: wrap; }
+nav a[aria-current="page"] { text-decoration: underline; }
+@media (max-width: 680px) {
+  .support-letter { padding: 38px 0 50px; }
+  .support-letter .letter-intro { font-size: 17px; }
+}
