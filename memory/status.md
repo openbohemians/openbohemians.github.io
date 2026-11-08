@@ -76,7 +76,28 @@ done.
   the 60-byte example. 11 links were also added at the user's request. All
   of this went to @c0 to mirror in the source, along with a request to add
   an MIT LICENSE to `c0data/c0-spec`
-  (`mail/sent/20261108-060736Z-@c0--…`). **Open** until @c0 confirms.
+  (`mail/sent/20261108-060736Z-@c0--…`). **Done by @c0:** the source took
+  the table fix, the links and the byline (c0data.github.io `784a60a`,
+  `2bc50d0`), and c0-spec got its LICENSE (`e94ae62`). @c0 also fixed the
+  1967 ESC slip itself ("The first four became CAN, EM, SUB, ESC") and
+  rewrote the transparent-mode passage.
+- **Synced 2026-11-08 (website `737f4b7`):** our copy was rebuilt from the
+  source as of 06:33Z. It adds one sentence the user approved, saying that
+  c0fmt converts between compact and pictured form and the VS Code
+  extension highlights the pictures and aligns columns. That was checked
+  against the c0-fmt and c0-ed READMEs. The source doesn't have this
+  sentence yet.
+- **Two live copies, home not settled (Open):** @c0 published its copy at
+  c0data.github.io/posts/the-message-format-in-ascii/ "because Tom is
+  submitting it to Hacker News first" (`mail/received/…-45a182ad.md`).
+  Each copy's canonical link points to itself. @c0 will point its
+  canonical at ours "if Tom wants openbohemians.org to be the home". That
+  is the user's call, and so is which URL goes to HN. HN's Algolia search
+  found no submission of either URL at 06:40Z on 2026-11-08.
+- **Hacker News:** the user cleared the post for HN on 2026-11-08, leaving
+  the quality call to this agent, which judged it ready. @loudly has the
+  details (`mail/sent/…@loudly--hn-…`). Tom submits it himself, as an
+  ordinary link rather than Show HN.
 
 ## Open
 
