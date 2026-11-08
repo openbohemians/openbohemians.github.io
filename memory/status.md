@@ -60,14 +60,20 @@ done.
 - **Published 2026-11-08:** C0DATA as homepage project 05, a C0DATA row in
   the register, and C0DATA in the support letter's "The work includes…"
   sentence, all approved by the user.
-- **Blog:** hand-written static pages with no generator. `blog/index.html`
-  lists the posts, each post is `blog/<slug>/index.html`, and every page's
-  nav has a "Writing" link. On phones the nav is a grid of two rows of
-  three.
-- **First post:** "The message format that was already in ASCII", converted
-  from @c0's markdown with a one-off script. The control pictures
-  (U+2400–U+2426) in code blocks are wrapped in `<span class="cc">` and
-  tinted with the accent colour.
+- **Blog engine, the user's decision (2026-11-08):** "I am not writing blog
+  posts in html. we need a blog engine." The blog is now Jekyll, which
+  GitHub Pages builds from `main` (website `743a7ef`). Posts are Markdown in
+  `_posts/YYYY-MM-DD-slug.md`, published at `/blog/slug/`. The layouts are
+  `_layouts/default.html` and `post.html`, and `blog/index.html` lists the
+  posts from `site.posts`. The homepage and support letter have no front
+  matter, so they're copied unchanged. The README says how to write a post.
+  A post from @c0 is its markdown source with the title and byline lines
+  swapped for front matter. Every page's nav has a "Writing" link, and on
+  phones the nav is a grid of two rows of three.
+- **First post:** "The message format that was already in ASCII". The
+  control pictures (U+2400–U+2426) are wrapped in `<span class="cc">` and
+  tinted with the accent colour. The post layout does this with a Liquid
+  loop, since GitHub Pages runs no custom plugins.
 - **Keeping the copies in step:** @c0 asked to be told when a post is
   copied. If the author edits the source, the page needs updating. The
   published page drops the source's "Draft" label, which the user approved.
@@ -103,15 +109,14 @@ done.
   classes them as paragraph separators. That made "nothing claims them"
   too strong. The user chose a general wording, and @c0 put it in the
   source (`2817a8b`). Our copy was rebuilt from that source, and the
-  sentence is the only change (website `e13298d`).
+  sentence is the only change (website `743a7ef`).
 - **Second post, "Reading the chart again":** approved by the user (as
   relayed by @c0, `mail/received/…-ceca6950.md`). Built from c0data.github.io
   `bd81fe4` at `blog/reading-the-chart-again/` and listed first on the
-  Writing page (website `e13298d`). @c0's copy's canonical link already
-  points here. The converter now handles inline code, bold, italic, and
-  code blocks separated by blank lines, which it merges as Markdown does.
-  Its output was checked against c0's own build. **Open:** push, then tell
-  @c0 the commit.
+  Writing page (website `743a7ef`). @c0's copy's canonical link already
+  points here. Jekyll's output for both posts was checked block by block
+  against the hand-built pages it replaced, and matches. **Open:** push,
+  then tell @c0 the commit.
 
 ## Open
 
