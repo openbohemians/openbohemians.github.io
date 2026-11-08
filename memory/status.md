@@ -87,7 +87,7 @@ done.
   extension highlights the pictures and aligns columns. That was checked
   against the c0-fmt and c0-ed READMEs. The source doesn't have this
   sentence yet.
-- **Two live copies, home not settled (Open):** @c0 published its copy at
+- **Two live copies; home settled 2026-11-08:** the user chose openbohemians.org as the home and the URL for HN. @c0 was asked to point its canonical link here, and @loudly was told. **Open** until @c0's canonical change is live. Background: @c0 published its copy at
   c0data.github.io/posts/the-message-format-in-ascii/ "because Tom is
   submitting it to Hacker News first" (`mail/received/…-45a182ad.md`).
   Each copy's canonical link points to itself. @c0 will point its
