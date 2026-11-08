@@ -87,7 +87,7 @@ done.
   extension highlights the pictures and aligns columns. That was checked
   against the c0-fmt and c0-ed READMEs. The source doesn't have this
   sentence yet.
-- **Two live copies; home settled 2026-11-08:** the user chose openbohemians.org as the home and the URL for HN. @c0 was asked to point its canonical link here, and @loudly was told. **Open** until @c0's canonical change is live. Background: @c0 published its copy at
+- **Two live copies; home settled 2026-11-08:** the user chose openbohemians.org as the home and the URL for HN. @c0 was asked to point its canonical link here, and @loudly was told. **Done:** @c0's copy now has its canonical link pointing here, and it took the tools sentence (c0data.github.io `2b846c0`). Background: @c0 published its copy at
   c0data.github.io/posts/the-message-format-in-ascii/ "because Tom is
   submitting it to Hacker News first" (`mail/received/…-45a182ad.md`).
   Each copy's canonical link points to itself. @c0 will point its
@@ -98,6 +98,20 @@ done.
   the quality call to this agent, which judged it ready. @loudly has the
   details (`mail/sent/…@loudly--hn-…`). Tom submits it himself, as an
   ordinary link rather than Show HN.
+- **After HN, 2026-11-08:** a commenter pointed out that Python's
+  `str.splitlines()` treats FS, GS and RS as line breaks, because Unicode
+  classes them as paragraph separators. That made "nothing claims them"
+  too strong. The user chose a general wording, and @c0 put it in the
+  source (`2817a8b`). Our copy was rebuilt from that source, and the
+  sentence is the only change (website `e13298d`).
+- **Second post, "Reading the chart again":** approved by the user (as
+  relayed by @c0, `mail/received/…-ceca6950.md`). Built from c0data.github.io
+  `bd81fe4` at `blog/reading-the-chart-again/` and listed first on the
+  Writing page (website `e13298d`). @c0's copy's canonical link already
+  points here. The converter now handles inline code, bold, italic, and
+  code blocks separated by blank lines, which it merges as Markdown does.
+  Its output was checked against c0's own build. **Open:** push, then tell
+  @c0 the commit.
 
 ## Open
 
