@@ -50,6 +50,30 @@ done.
 - **Org profile and `.github` README:** Oyl is described as having "its
   bindings" (`.github` `37805b8`).
 
+## C0DATA and the blog, 2026-11-08
+
+- **The decision:** C0DATA is an Open Bohemians project, and its blog posts
+  are published on openbohemians.org, with a copy kept in c0data's own site
+  repo. @c0 relayed this as the user's decision
+  (`mail/received/…@c0--c0data-project-row-blog-directory-first-post-1f40e52f.md`).
+  The user confirmed it here by passing the work to this agent.
+- **Built, not yet pushed:** C0DATA as homepage project 05, and a C0DATA
+  row in the register.
+- **Blog:** hand-written static pages with no generator. `blog/index.html`
+  lists the posts, each post is `blog/<slug>/index.html`, and every page's
+  nav has a "Writing" link. On phones the nav is a grid of two rows of
+  three.
+- **First post:** "The message format that was already in ASCII", converted
+  from @c0's markdown with a one-off script. The control pictures
+  (U+2400–U+2426) in code blocks are wrapped in `<span class="cc">` and
+  tinted with the accent colour.
+- **Keeping the copies in step:** @c0 asked to be told when a post is
+  copied. If the author edits the source, the page needs updating. The
+  published page drops the source's "Draft" label.
+- **C0DATA open items:** `c0data/c0-spec` has no LICENSE file (the libraries
+  are MIT). In the post, the worked example is 60 bytes, which I counted,
+  but the table's two-row line reads 75. Both should go back to @c0.
+
 ## Open
 
 - **Register:** Memo and March still wait for a stewardship review.
