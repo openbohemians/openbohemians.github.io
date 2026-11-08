@@ -1,0 +1,29 @@
+# GitHub Pages builds this site with Jekyll when main is pushed.
+#
+# The homepage and the support letter are plain HTML with no front matter,
+# so Jekyll copies them as they are. The blog is Markdown: each post is
+# _posts/YYYY-MM-DD-slug.md, published at /blog/slug/, and blog/index.html
+# lists them.
+
+title: Open Bohemians
+url: https://openbohemians.org
+permalink: /blog/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Thomas Sawyer
+
+exclude:
+  - README.md
+  - DNS-SETUP.md
+  - Intake
+  - Outtake

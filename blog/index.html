@@ -1,60 +1,24 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f3eb">
-  <meta name="description" content="Writing from Open Bohemians: essays on our projects and the ideas behind them.">
-  <meta property="og:title" content="Writing — Open Bohemians">
-  <meta property="og:description" content="Essays on our projects and the ideas behind them.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://openbohemians.org/blog/">
-  <link rel="canonical" href="https://openbohemians.org/blog/">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../style.css">
-  <title>Writing — Open Bohemians</title>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="wordmark" href="../" aria-label="Open Bohemians home">
-        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-          <path d="M22 9a15 15 0 1 0 0 30M28 9v30m0-30h4a7.5 7.5 0 0 1 0 15h-4m0 0h4a7.5 7.5 0 0 1 0 15h-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-        </svg>
-        <span>Open Bohemians</span>
-      </a>
-      <nav aria-label="Main navigation">
-        <a href="../#projects">Projects</a>
-        <a href="../#approach">Our approach</a>
-        <a href="./" aria-current="page">Writing</a>
-        <a href="../support/">Support</a>
-        <a class="nav-sponsor" href="https://github.com/sponsors/openbohemians">Sponsor <span aria-hidden="true">↗</span></a>
-        <a class="nav-github" href="https://github.com/openbohemians">GitHub <span aria-hidden="true">↗</span></a>
-      </nav>
-    </header>
-
-    <main id="main" class="writing">
+---
+layout: default
+title: Writing
+description: "Writing from Open Bohemians: essays on our projects and the ideas behind them."
+og_title: Writing — Open Bohemians
+og_description: Essays on our projects and the ideas behind them.
+---
       <header>
         <p class="eyebrow">Writing</p>
         <h1>Essays and notes</h1>
         <p class="writing-intro">On our projects and the ideas behind them.</p>
       </header>
       <ul class="post-list">
+{%- for post in site.posts %}
         <li>
           <article>
-            <p class="post-meta"><time datetime="2026-11-08">8 November 2026</time> <span aria-hidden="true">·</span> C0DATA</p>
-            <h2><a href="the-message-format-in-ascii/">The message format that was already in ASCII</a></h2>
-            <p>ASCII’s first thirty-two codes were designed as a message format. The world kept the half it could see; C0DATA picks up the other half.</p>
-            <p class="post-meta">Thomas Sawyer</p>
+            <p class="post-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%-d %B %Y' }}</time>{% if post.project %} <span aria-hidden="true">·</span> {{ post.project }}{% endif %}</p>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>{{ post.description }}</p>
+            <p class="post-meta">{{ post.author }}</p>
           </article>
         </li>
+{%- endfor %}
       </ul>
-    </main>
-    <footer class="site-footer">
-      <p>Open Bohemians <span class="footer-separator" aria-hidden="true">/</span> Useful software. Shared stewardship.</p>
-      <p>Founded by <a href="https://github.com/trans">Tom Sawyer</a>. Built in the open.</p>
-    </footer>
-  </div>
-</body>
-</html>

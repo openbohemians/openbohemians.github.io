@@ -151,6 +151,8 @@ nav a[aria-current="page"] { text-decoration: underline; }
 .post h2 { font-size: 30px; margin-top: 42px; }
 .post pre { margin: 24px 0 0; padding: 16px 18px; overflow-x: auto; background: #ece9dd; border: 1px solid var(--line); border-radius: 4px; color: var(--ink); font: 13.5px/1.6 ui-monospace, "SFMono-Regular", Menlo, Consolas, "DejaVu Sans Mono", monospace; }
 .post .cc { color: var(--accent); }
+.post :not(pre) > code { font: 0.9em ui-monospace, "SFMono-Regular", Menlo, Consolas, "DejaVu Sans Mono", monospace; color: var(--ink); }
+.post p strong { color: var(--ink); font-weight: 600; }
 .post-more { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; }
 .post-list { list-style: none; margin: 40px 0 0; padding: 0; border-top: 1px solid var(--line); }
 .post-list li { padding: 28px 0 30px; border-bottom: 1px solid var(--line); }

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{%- comment -%}
+  The posts write control codes as Unicode Control Pictures (U+2400-U+2426).
+  Each one is wrapped in a span so the stylesheet can tint it.
+{%- endcomment -%}
+{%- assign pictures = "␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏ ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟ ␠ ␡ ␢ ␣ ␤ ␥ ␦" | split: " " -%}
+{%- assign body = content -%}
+{%- for c in pictures -%}
+  {%- capture tinted %}<span class="cc">{{ c }}</span>{% endcapture -%}
+  {%- assign body = body | replace: c, tinted -%}
+{%- endfor %}
+      <article class="post" aria-labelledby="post-title">
+        <p class="eyebrow"><a href="/blog/">Writing</a>{% if page.project %} <span aria-hidden="true">/</span> {{ page.project }}{% endif %}</p>
+        <h1 id="post-title">{{ page.title }}</h1>
+        <p class="post-byline">{{ page.author }} <span aria-hidden="true">·</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%-d %B %Y' }}</time></p>
+{{ body }}
+      </article>
+      <p class="post-more">{% if page.project_url %}<a href="{{ page.project_url }}">About {{ page.project }} <span aria-hidden="true">↗</span></a> {% endif %}<a href="/blog/">More writing</a></p>
