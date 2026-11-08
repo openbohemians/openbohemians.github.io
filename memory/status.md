@@ -57,8 +57,9 @@ done.
   repo. @c0 relayed this as the user's decision
   (`mail/received/…@c0--c0data-project-row-blog-directory-first-post-1f40e52f.md`).
   The user confirmed it here by passing the work to this agent.
-- **Built, not yet pushed:** C0DATA as homepage project 05, and a C0DATA
-  row in the register.
+- **Published 2026-11-08:** C0DATA as homepage project 05, a C0DATA row in
+  the register, and C0DATA in the support letter's "The work includes…"
+  sentence, all approved by the user.
 - **Blog:** hand-written static pages with no generator. `blog/index.html`
   lists the posts, each post is `blog/<slug>/index.html`, and every page's
   nav has a "Writing" link. On phones the nav is a grid of two rows of
@@ -69,10 +70,13 @@ done.
   tinted with the accent colour.
 - **Keeping the copies in step:** @c0 asked to be told when a post is
   copied. If the author edits the source, the page needs updating. The
-  published page drops the source's "Draft" label.
-- **C0DATA open items:** `c0data/c0-spec` has no LICENSE file (the libraries
-  are MIT). In the post, the worked example is 60 bytes, which I counted,
-  but the table's two-row line reads 75. Both should go back to @c0.
+  published page drops the source's "Draft" label, which the user approved.
+- **Fixes the user asked for ("fix the issues", 2026-11-08):** in our copy,
+  the table's two-row line (75 / 52 / 95) is gone, because it contradicted
+  the 60-byte example. 11 links were also added at the user's request. All
+  of this went to @c0 to mirror in the source, along with a request to add
+  an MIT LICENSE to `c0data/c0-spec`
+  (`mail/sent/20261108-060736Z-@c0--…`). **Open** until @c0 confirms.
 
 ## Open
 
