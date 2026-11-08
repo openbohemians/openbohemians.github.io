@@ -140,3 +140,28 @@ nav a[aria-current="page"] { text-decoration: underline; }
   .support-letter { padding: 38px 0 50px; }
   .support-letter .letter-intro { font-size: 17px; }
 }
+
+/* Writing: the blog index and posts use the letter's measure and type. */
+.writing { max-width: 760px; margin: 0 auto; padding: 65px 0 80px; }
+.writing h1 { font-size: clamp(40px, 5.5vw, 64px); }
+.writing .eyebrow a { text-decoration: none; }
+.writing-intro { color: var(--muted); font-size: 19px; }
+.post-meta, .post-byline { color: var(--muted); font-size: 13px; }
+.post p:not(.eyebrow):not(.post-byline) { margin-top: 24px; color: var(--muted); }
+.post h2 { font-size: 30px; margin-top: 42px; }
+.post pre { margin: 24px 0 0; padding: 16px 18px; overflow-x: auto; background: #ece9dd; border: 1px solid var(--line); border-radius: 4px; color: var(--ink); font: 13.5px/1.6 ui-monospace, "SFMono-Regular", Menlo, Consolas, "DejaVu Sans Mono", monospace; }
+.post .cc { color: var(--accent); }
+.post-more { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; }
+.post-list { list-style: none; margin: 40px 0 0; padding: 0; border-top: 1px solid var(--line); }
+.post-list li { padding: 28px 0 30px; border-bottom: 1px solid var(--line); }
+.post-list h2 { font-size: 30px; margin-top: 6px; }
+.post-list h2 a { text-decoration: none; }
+.post-list p:not(.post-meta) { margin: 12px 0; color: var(--muted); }
+@media (max-width: 680px) {
+  /* Six links don't fit one row on a phone: two even rows of three. */
+  nav { display: grid; grid-template-columns: repeat(3, max-content); justify-content: space-between; gap: 2px 16px; }
+  .writing { padding: 38px 0 50px; }
+  .writing-intro { font-size: 17px; }
+  .post h2, .post-list h2 { font-size: 26px; }
+  .post pre { padding: 14px; font-size: 12.5px; }
+}
