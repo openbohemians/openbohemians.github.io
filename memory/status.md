@@ -115,8 +115,11 @@ done.
   `bd81fe4` at `blog/reading-the-chart-again/` and listed first on the
   Writing page (website `743a7ef`). @c0's copy's canonical link already
   points here. Jekyll's output for both posts was checked block by block
-  against the hand-built pages it replaced, and matches. **Open:** push,
-  then tell @c0 the commit.
+  against the hand-built pages it replaced, and matches. **Live and
+  checked 2026-11-08:** the Pages run was green, and the live pages match
+  the hand-built ones block by block, meta tags included. @c0 has been told
+  (`mail/sent/20261108-190721Z-@c0--…`). It keeps sending markdown, with an
+  optional summary for the Writing page.
 
 ## Open
 
