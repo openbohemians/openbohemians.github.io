@@ -69,15 +69,13 @@ done.
   matter, so they're copied unchanged. The README says how to write a post.
   At the user's prompting, posts and layouts moved into `blog/_posts/` and
   `blog/_layouts/` (`layouts_dir`), and only `_config.yml` stays at the top
-  (`25ae31d`, which builds byte-for-byte the same site). **Pushed
-  2026-11-11, not yet deployed:** GitHub's Pages runs for it failed on
-  GitHub's side. Two startup failures said "An unexpected error has
-  occurred… try again" (runs 43097629895 and 43098055099), and in run
-  43098481912 the build job never got a runner. GitHub's status page showed
-  nothing wrong, and other org repos ran fine. The live site still serves
-  `743a7ef`'s build, which has the same content. **Open:** retry with
-  `gh api -X POST repos/openbohemians/openbohemians.github.io/pages/builds`
-  (or any push), then check that the run succeeds.
+  (`25ae31d`, which builds byte-for-byte the same site). **Live
+  2026-11-11:** three Pages runs failed on GitHub's side first (two
+  "unexpected error" startup failures, then a build job that never got a
+  runner). A retry at the user's request, run 43113626268, succeeded. The
+  live pages are byte-for-byte what they were on 2026-11-08. If a Pages run
+  fails like that again, request a rebuild with `gh api -X POST
+  repos/openbohemians/openbohemians.github.io/pages/builds`.
   A post from @c0 is its markdown source with the title and byline lines
   swapped for front matter. Every page's nav has a "Writing" link, and on
   phones the nav is a grid of two rows of three.
