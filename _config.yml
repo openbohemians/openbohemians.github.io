@@ -1,13 +1,15 @@
 # GitHub Pages builds this site with Jekyll when main is pushed.
 #
 # The homepage and the support letter are plain HTML with no front matter,
-# so Jekyll copies them as they are. The blog is Markdown: each post is
-# _posts/YYYY-MM-DD-slug.md, published at /blog/slug/, and blog/index.html
-# lists them.
+# so Jekyll copies them as they are. Everything for the blog is in blog/:
+# each post is blog/_posts/YYYY-MM-DD-slug.md, published at /blog/slug/,
+# blog/index.html lists them, and the layouts are in blog/_layouts/. This
+# file has to stay at the top level, where GitHub Pages looks for it.
 
 title: Open Bohemians
 url: https://openbohemians.org
 permalink: /blog/:title/
+layouts_dir: blog/_layouts
 
 markdown: kramdown
 kramdown:

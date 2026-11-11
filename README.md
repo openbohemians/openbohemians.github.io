@@ -11,7 +11,7 @@ are plain HTML with no front matter, so Jekyll copies them as they are.
 
 ## Writing a post
 
-Posts are Markdown files in `_posts/`, named `YYYY-MM-DD-slug.md`. Each is
+Posts are Markdown files in `blog/_posts/`, named `YYYY-MM-DD-slug.md`. Each is
 published at `/blog/slug/`, and the Writing page (`blog/index.html`) lists
 them, newest first. Start a post with:
 
@@ -30,7 +30,7 @@ The first paragraph...
 The author defaults to Thomas Sawyer; add `author:` to change it. The date
 and time order posts published on the same day. Control Pictures
 (U+2400–U+2426, such as ␞ and ␟) are tinted wherever they appear. The page
-layout is in `_layouts/`: `default.html` is the shell, `post.html` the post.
+layout is in `blog/_layouts/`: `default.html` is the shell, `post.html` the post.
 
 ## Local preview
 
