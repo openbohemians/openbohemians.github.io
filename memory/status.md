@@ -1,6 +1,6 @@
 # Status
 
-*Updated 2026-11-08*
+*Updated 2026-11-11*
 
 ## What this project covers
 
@@ -67,6 +67,10 @@ done.
   `_layouts/default.html` and `post.html`, and `blog/index.html` lists the
   posts from `site.posts`. The homepage and support letter have no front
   matter, so they're copied unchanged. The README says how to write a post.
+  At the user's prompting, posts and layouts moved into `blog/_posts/` and
+  `blog/_layouts/` (`layouts_dir`), and only `_config.yml` stays at the top
+  (`25ae31d`, which builds byte-for-byte the same site). **Not yet
+  pushed.**
   A post from @c0 is its markdown source with the title and byline lines
   swapped for front matter. Every page's nav has a "Writing" link, and on
   phones the nav is a grid of two rows of three.
@@ -93,13 +97,17 @@ done.
   extension highlights the pictures and aligns columns. That was checked
   against the c0-fmt and c0-ed READMEs. The source doesn't have this
   sentence yet.
-- **Two live copies; home settled 2026-11-08:** the user chose openbohemians.org as the home and the URL for HN. @c0 was asked to point its canonical link here, and @loudly was told. **Done:** @c0's copy now has its canonical link pointing here, and it took the tools sentence (c0data.github.io `2b846c0`). Background: @c0 published its copy at
-  c0data.github.io/posts/the-message-format-in-ascii/ "because Tom is
-  submitting it to Hacker News first" (`mail/received/…-45a182ad.md`).
-  Each copy's canonical link points to itself. @c0 will point its
-  canonical at ours "if Tom wants openbohemians.org to be the home". That
-  is the user's call, and so is which URL goes to HN. HN's Algolia search
-  found no submission of either URL at 06:40Z on 2026-11-08.
+- **One copy, on openbohemians.org:** the user decided on 2026-11-08 (as
+  relayed by @c0, `mail/received/…-219fc1eb.md`) that project blog posts
+  live only on openbohemians.org, and project sites just list them with
+  links. c0data.github.io's Writing page now links to our posts, and its
+  old copies at `/posts/<slug>/` redirect here (meta refresh plus a
+  canonical link to ours, checked with curl on 2026-11-11). The markdown
+  sources stay in `c0data.github.io/posts/*.md`, where @c0 writes them.
+  @c0 sends each new post as markdown with a one- or two-sentence summary,
+  and we swap its title and byline lines for front matter. It accepted the
+  summary written for "Reading the chart again" (`…-07994ebf.md`). Nothing
+  is open between us.
 - **Hacker News:** the user cleared the post for HN on 2026-11-08, leaving
   the quality call to this agent, which judged it ready. @loudly has the
   details (`mail/sent/…@loudly--hn-…`). Tom submits it himself, as an
